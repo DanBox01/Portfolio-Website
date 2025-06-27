@@ -7,9 +7,22 @@
 </head>
 
 <body class="frontPage">
-    <h2>Full Stack Web Developer</h2>
+     <script src="SideNav.js"></script>
+    <h2 class="rounded">Full Stack Web Developer</h2>
 
     <hr>
+
+<div id="SideNav" class="sidenav" >
+
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+
+</div>
+
+<button class="rounded" onclick="openNav()">Sidenav</button>
 
     <!--Name and contact info division-->
     <div>
@@ -20,14 +33,14 @@
         <li>location: Marion, Alabama, US</li>
 
         <li>Linkedin:
-            <button>
-                <a href="https://www.linkedin.com/in/danielbockstege/" target="_blank">Linkedin</a>
+            <button  class="image_button">
+                <a href="https://www.linkedin.com/in/danielbockstege/" target="_blank"><img class="icon" src="/images/in-logo/LI-In-Bug.png"></a>
             </button>
         </li>
 
         <li>Github:
-            <button>
-                <a href="https://github.com/DanBox01"  target="_blank">Github</a>
+            <button class="image_button">
+                <a href="https://github.com/DanBox01" target="_blank"><img class="icon" src="/images/github-mark/github-mark-white.png"></a>
             </button>
         </li>
         </ul>
@@ -41,7 +54,7 @@
 
     <!--This division is for my resume to be displayed and downloaded-->
     <div>
-            <h4>Skills</h4>
+            <h4  class="rounded">Skills</h4>
        <ul>
         <li>JavaScript</li>
         <li>HTML</li>
@@ -62,29 +75,30 @@
     <hr>
 
     <div>
-        <h4>Experience</h4>
+        <h4  class="rounded">Experience</h4>
         <ul>
-        <li>Currently working for Advent Services <button><a href="https://adventsvcsllc.com/" target="_blank">adventsvcsllc</a></button></li>
+        <li>Currently working for Advent Services</li>
         <li>2024 - present</li>
         <li>Advent Services Phone Number (850) 441-2915</li>
         <li>I have worked at Advent Services for one year as a web developer building websites that integrate 3rd party services, API's, 
             and Artificial Intelligence into Web apps.
         </li>
+        <li>Advent services Website <a href="https://adventsvcsllc.com/" target="_blank" class="link">https://adventsvcsllc.com/</a></li>
         </ul>
     </div>
     <br>
     <hr>
-    <div class="education">
-        <h4>Education</h4>
+    <div>
+        <h4  class="rounded">Education</h4>
         <p>
             <ul>
                 <li>Bachelors degree in Computer Science and a minor in Japanese language</li>
                <li> UAB - University of Alabama at Birmingham
                 Graduated in December 2025</li>
+                <li>UAB Website: <a href="https://www.uab.edu/home/" target="_blank" class="link"> https://www.uab.edu/home/ </a></li>
             </ul>
         </p>
         
-        <a href="https://www.uab.edu/home/"> UAB </a>
-    </div>
+           </div>
 </body>
 </html>
