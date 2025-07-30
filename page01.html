@@ -7,7 +7,7 @@
 </head>
 
 <body class="frontPage">
- <h1 id="penis">Full Stack Web Developer</h1>
+    <h1 class="penis">Full Stack Web Developer</h1>
 
     <script src="SideNav.js"></script>
     <div id="SideNav" class="sidenav">
@@ -20,11 +20,11 @@
             married to my lovely wife Samantha.</p>
 
     </div>
- <button class="button" onclick="openNav()">About me</button>
+    <button class="button" onclick="openNav()">About me</button>
 
 
     <!--Name and contact info division-->
-    <div id="urmom" style="font-size: larger;">
+    <div class="urmom" style="font-size: larger;">
         <ul>
             <li>Name: Daniel Bockstege Jr</li>
             <li>email: danieltbockstege@gmail.com</li>
@@ -34,14 +34,14 @@
             <li>Linkedin:
                 <button class="image_button">
                     <a href="https://www.linkedin.com/in/danielbockstege/" target="_blank"><img class="icon"
-                            src="/images/in-logo/LI-In-Bug.png"></a>
+                            src="\portfolio\Portfolio-Website\images\in-logo\LI-In-Bug.png"></a>
                 </button>
             </li>
 
             <li>Github:
                 <button class="image_button">
                     <a href="https://github.com/DanBox01" target="_blank"><img class="icon"
-                            src="/images/github-mark/github-mark-white.png"></a>
+                            src="\portfolio\Portfolio-Website\images\github-mark\github-mark-white.svg"></a>
                 </button>
             </li>
         </ul>
@@ -49,13 +49,20 @@
     </div>
 
 
+    <div id="buttonBar">
+        <script src="ButtonBar.js"></script>
+        <button class="button">Experience</button>
+        <button class="button" onclick="SkillsOpen()">Skills</button>
+        <button class="button">Education</button>
+        <button class="button">Projects</button>
+    </div>
 
 
 
     <!--This division is for skills-->
     <div class="skills">
-        <h4 class="rounded">Skills</h4>
-        <div class="bubbleBox">
+
+        <div class="bubbleBox" id="skillsBox">
 
             <ul>
                 <li>JavaScript</li>
@@ -77,8 +84,8 @@
     <br>
 
     <!--Experience div-->
-    <h4 class="rounded">Experience</h4>
-    <div class="bubbleBox">
+    <div class="Experience">
+     <div class="bubbleBox" id=xp>
 
         <ul>
             <li>Currently working for Advent Services</li>
@@ -86,16 +93,17 @@
             <li>Advent Services Phone Number (850) 441-2915</li>
             <li>I have worked at Advent Services for one year as a web developer building websites that integrate
                 3rd party services, API's,
-                and Artificial Intelligence into Web apps.
+                and AI.
             </li>
             <li>Advent services Website <a href="https://adventsvcsllc.com/" target="_blank"
                     class="link">https://adventsvcsllc.com/</a></li>
         </ul>
     </div>
+    </div>
     <br>
 
     <!--Education div-->
-    <h4 class="rounded">Education</h4>
+    <div class="Education">
     <div class="bubbleBox">
         <p>
         <ul>
@@ -107,6 +115,35 @@
         </ul>
         </p>
 
+    </div>
+    </div>
+
+    <!--Div for contact me form-->
+    <h4 class="benis">Contact Me</h4>
+    <div class="urmom">
+        <form>
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </p>
+            <p>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+            <p>
+                <label for="message"></label>
+                <textarea id="message" rows="6" name="message">Send me an email!</textarea>
+            </p>
+            <p>
+                <button type="submit" class="button">
+                    Submit
+                </button>
+            </p>
+        </form>
     </div>
 
 </body>
